@@ -1,0 +1,24 @@
+{
+  "mqtt": {
+    "host": "127.0.0.1",
+    "port": 1883,
+    "username": "mqtt-user",
+    "password": "change-me",
+    "client_id": "monitor-bridge"
+  },
+  "switch": {
+    "name": "PC Monitor",
+    "object_id": "pc_monitor",
+    "unique_id": "pc_monitor_dpms_switch",
+    "manufacturer": "Generic",
+    "model": "Display",
+    "icon": "mdi:monitor",
+    "device_id": "pc-monitor-bridge",
+    "device_name": "PC Monitor"
+  },
+  "topics": {
+    "discovery": "homeassistant/switch/pc_monitor/config",
+    "state": "monitor/pc/state",
+    "set": "monitor/pc/set"
+  }
+}
