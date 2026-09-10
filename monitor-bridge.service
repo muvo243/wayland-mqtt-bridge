@@ -4,8 +4,8 @@ After=graphical-session.target
 Wants=graphical-session.target
 
 [Service]
-WorkingDirectory=%h/screenbridge
-ExecStart=%h/screenbridge/run.sh
+WorkingDirectory=%h/wayland-mqtt-bridge
+ExecStart=%h/wayland-mqtt-bridge/run.sh
 Restart=always
 RestartSec=3
 

@@ -6,6 +6,7 @@
     "password": "change-me",
     "client_id": "monitor-bridge"
   },
+  "output": "",
   "switch": {
     "name": "PC Monitor",
     "object_id": "pc_monitor",
@@ -19,6 +20,13 @@
   "topics": {
     "discovery": "homeassistant/switch/pc_monitor/config",
     "state": "monitor/pc/state",
-    "set": "monitor/pc/set"
+    "set": "monitor/pc/set",
+    "brightness_discovery": "homeassistant/number/pc_monitor_brightness/config",
+    "brightness_state": "monitor/pc/brightness",
+    "brightness_set": "monitor/pc/brightness/set",
+    "last_input_discovery": "homeassistant/sensor/pc_monitor_last_input/config",
+    "last_input_state": "monitor/pc/last_input",
+    "idle_discovery": "homeassistant/sensor/pc_monitor_idle/config",
+    "idle_state": "monitor/pc/idle"
   }
 }
